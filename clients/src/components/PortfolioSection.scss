@@ -1,0 +1,157 @@
+@import "../style/color.module.scss";
+
+.portfolio-Section {
+  background-color: $bg-color-grey;
+
+  text-align: center;
+  padding: 10rem 0;
+
+  @media only screen and (max-width: $bg-tap-port) {
+    padding: 7rem 0;
+  }
+
+  .heading-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .heading {
+    font-family: $Montagu-Slab;
+    font-size: 3.7rem;
+    width: 45rem;
+    margin-bottom: -1rem;
+
+    @media only screen and (max-width: $bg-tap-port) {
+      font-size: 3.2rem;
+    }
+    @media only screen and (max-width: $bg-phone) {
+      width: unset;
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: $bg-phone-small) {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: $bg-phone-smallest) {
+      font-size: 1.7rem;
+    }
+  }
+
+  .categories {
+    position: relative;
+    // background-color: black;
+
+    @media only screen and (max-width: $bg-phone) {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      width: 87.5%;
+      left: 6.2%;
+      position: absolute;
+      bottom: 0;
+      background-color: $clr-dull-white;
+      height: 0.2rem;
+      transition: 0.3s ease-out;
+      border-radius: 0.3rem;
+      z-index: 0;
+    }
+  }
+  button {
+    font-family: $manrope;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $clr-border;
+    margin-left: 2rem;
+    background-color: transparent;
+    position: relative;
+    padding-bottom: 0.1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+
+    &::after {
+      content: "";
+      width: 0%;
+      left: 50%;
+      position: absolute;
+      bottom: 0;
+      background-color: $clr-light-orange;
+      height: 0.2rem;
+      transition: 0.3s ease-out;
+      border-radius: 0.3rem;
+      z-index: 1;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  .items-container {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 5rem auto 3rem auto;
+    gap: 2rem 3rem;
+    z-index: 1;
+
+    @media only screen and (max-width: $bg-tap-port) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (max-width: $bg-phone) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: $bg-phone-small) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width: $bg-phone-small) {
+      width: 80%;
+      margin: 0 auto 5rem auto;
+    }
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .item-content {
+    background-color: white;
+    padding: 2rem 0;
+    width: 100%;
+    margin-top: -0.6rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+
+    .item-title {
+      font-size: 1.3rem;
+      color: rgba(28, 25, 25, 0.8);
+      font-weight: 500;
+      margin-bottom: 2rem;
+
+      @media only screen and (max-width: $bg-phone-small) {
+        font-size: 1.4rem;
+      }
+    }
+
+    .item-desc {
+      font-family: $Montagu-Slab;
+      font-weight: 500;
+      font-size: 1.5rem;
+      color: $clr-greyish-blue;
+    }
+  }
+}

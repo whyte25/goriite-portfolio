@@ -1,0 +1,87 @@
+@import "../style/color.module.scss";
+
+form {
+  width: 40rem;
+  box-shadow: 0 0 2px 0.2rem rgba(0, 0, 0, 0.13);
+  position: relative;
+
+  @media only screen and (max-width: $bg-phone-small) {
+    width: 32rem;
+  }
+  @media only screen and (max-width: $bg-phone-smallest) {
+    width: 30rem;
+  }
+
+  input {
+    height: 5rem;
+    border: none;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1.7rem;
+    width: 100%;
+    background-color: white;
+    outline: none;
+    position: relative;
+
+    &:not(:last-child) {
+      border: 1px solid white;
+    }
+  }
+
+  .form-btn {
+    background-color: $clr-light-orange !important;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    height: 6rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &::placeholder {
+      background-color: white;
+    }
+
+    p {
+      position: absolute;
+    }
+  }
+}
+
+.error-container {
+  padding: 1.8rem 0;
+  position: relative;
+}
+
+.error {
+  color: rgb(185, 28, 28);
+  margin-left: 1rem;
+  animation: button 0.3s linear;
+  // background-color: blue;
+}
+
+textarea {
+  min-height: 15rem;
+  max-height: 15rem;
+  min-width: 100%;
+  max-width: 100%;
+  margin-bottom: 5rem;
+  border: none;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1.7rem;
+
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+}

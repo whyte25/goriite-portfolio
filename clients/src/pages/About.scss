@@ -1,0 +1,224 @@
+@import "../style/color.module.scss";
+
+.about-wrapper {
+  .about-1 {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 9rem 0;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      justify-content: space-between;
+      padding: 0 2rem;
+    }
+    @media only screen and (max-width: $bg-phone) {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 0;
+      // width: 100%;
+    }
+
+    @media only screen and (max-width: $bg-phone-small) {
+      padding-bottom: 5rem;
+    }
+    @media only screen and (max-width: $bg-phone-smallest) {
+      padding-bottom: 7rem;
+    }
+
+    img {
+      width: 43%;
+      margin-bottom: -19rem;
+      max-height: 75rem;
+      object-fit: cover;
+      background-color: #d9d9d9;
+
+      @media only screen and (max-width: $bg-phone) {
+        width: 60%;
+        margin-bottom: -17rem;
+      }
+      @media only screen and (max-width: $bg-phone-small) {
+        width: 80%;
+        margin-bottom: -22rem;
+      }
+    }
+  }
+  .about-1-content-wrapper {
+    width: 45rem;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      width: 43rem;
+    }
+
+    @media only screen and (max-width: $bg-phone) {
+      width: 80%;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    .about-1-heading {
+      font-family: $Montagu-Slab;
+      font-weight: 400;
+      font-size: 3.8rem;
+      margin-top: 8rem;
+
+      @media only screen and (max-width: $bg-phone-big) {
+        font-size: 3.3rem;
+        line-height: 1.2;
+        margin-top: 4rem;
+      }
+
+      @media only screen and (max-width: $bg-phone) {
+        font-size: 3rem;
+        line-height: 1.2;
+      }
+    }
+    P {
+      font-weight: 500;
+      font-size: 1.6rem;
+
+      @media only screen and (max-width: $bg-phone-big) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .about-2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 7rem;
+    margin: 8rem 0;
+
+    @media only screen and (max-width: $bg-tap-port) {
+      padding: 0;
+    }
+
+    @media only screen and (max-width: $bg-phone) {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 8rem 0 4rem 0;
+    }
+  }
+
+  .about-2-content-wrapper {
+    width: 50rem;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      width: 40rem;
+      margin: 0;
+    }
+    @media only screen and (max-width: $bg-phone) {
+      width: 80%;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+  }
+
+  .about-2-heading {
+    font-size: 3rem;
+    font-weight: 400;
+    width: 40rem;
+    text-transform: capitalize;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+
+    @media only screen and (max-width: $bg-phone) {
+      width: unset;
+    }
+  }
+
+  p {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+
+    @media only screen and (max-width: $bg-tap-port) {
+      margin-top: 3rem;
+    }
+
+    @media only screen and (max-width: $bg-phone-big) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .about-info {
+    width: 40rem;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+    @media only screen and (max-width: $bg-phone) {
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+    small {
+      font-size: 1.6rem;
+    }
+  }
+
+  .info-heading-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: $bg-phone) {
+      align-items: center;
+      justify-content: center;
+    }
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-left: 2rem;
+
+      @media only screen and (max-width: $bg-phone) {
+        display: inline;
+        font-size: 2.5rem;
+        margin-left: 0;
+      }
+    }
+
+    img {
+      animation: forward 1s infinite alternate-reverse;
+      width: 3rem;
+
+      @media only screen and (max-width: $bg-phone) {
+        display: none;
+      }
+    }
+  }
+
+  span {
+    margin-right: 0.4rem;
+    text-transform: capitalize;
+
+    @media only screen and (max-width: $bg-phone) {
+    }
+  }
+
+  .mail {
+    font-size: 2.7rem;
+    color: $clr-greyish-blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 5rem;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      font-size: 2.2rem;
+      justify-content: center;
+    }
+  }
+
+  .mail-icon {
+    animation: forward 1s infinite alternate-reverse;
+    width: 3rem;
+    @media only screen and (max-width: $bg-phone) {
+      margin-left: 1rem;
+      width: 2.5rem;
+    }
+  }
+}

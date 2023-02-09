@@ -1,0 +1,52 @@
+@import "../style/color.module.scss";
+
+.partners {
+  padding: 0 15rem;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bg-phone) {
+    padding: 0 10rem;
+  }
+
+  .partners-logo-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem 0;
+    align-items: center;
+    translate: all ease-in-out;
+    animation: moving 60s 3s linear infinite;
+
+    @media only screen and (max-width: $bg-phone) {
+      animation: moving 20s 3s linear infinite;
+    }
+  }
+
+  .partner-logo,
+  .newdawn {
+    width: 20rem;
+    object-fit: cover;
+
+    @media only screen and (max-width: $bg-phone) {
+      width: 15rem;
+      object-fit: contain;
+      margin-right: 2rem;
+    }
+  }
+
+  .newdawn {
+    margin-top: -3rem;
+
+    @media only screen and (max-width: $bg-phone) {
+      margin-top: -1.7rem;
+    }
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

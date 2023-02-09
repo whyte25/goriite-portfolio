@@ -1,0 +1,21 @@
+@import "../style/color.module.scss";
+
+.card-skeleton {
+  width: 95%;
+  overflow: hidden;
+  border-radius: 1.7rem;
+
+  .skeleton {
+    width: 100%;
+    height: 200px;
+
+    @media only screen and (max-width: $bg-laptop) {
+      height: 150px;
+    }
+  }
+
+  .skeleton-content {
+    background-color: white;
+    padding: 0 0 2rem 0;
+  }
+}

@@ -1,0 +1,179 @@
+@import "../style/color.module.scss";
+
+header {
+  background-color: $bg-color-grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 10rem 0 0 0;
+
+  @media only screen and (max-width: $bg-phone) {
+    flex-direction: column;
+    // margin-top: 4rem;
+  }
+
+  .header-content-wrapper {
+    position: relative;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35rem;
+    margin-top: -10rem;
+    margin-left: 6rem;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      height: 30rem;
+      margin-left: 3rem;
+    }
+
+    @media only screen and (max-width: $bg-phone) {
+      margin-top: 2rem;
+      margin-left: 0;
+      width: 80%;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .header-subheading {
+    font-size: 1.8rem;
+    color: $clr-light-orange;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      font-size: 1.6rem;
+    }
+  }
+
+  .header-heading {
+    font-family: $Montagu-Slab;
+    font-size: 3.8rem;
+    line-height: 1.2;
+    color: $clr-greyish-blue;
+
+    @media only screen and (max-width: $bg-tap-land) {
+      font-size: 3.3rem;
+    }
+    @media only screen and (max-width: $bg-tap-port) {
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: $bg-phone-big) {
+      font-size: 2.5rem;
+    }
+    @media only screen and (max-width: $bg-phone) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .header-content {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+
+    @media only screen and (max-width: $bg-tap-port) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (max-width: $bg-phone) {
+      margin: -1.5rem 0;
+    }
+  }
+
+  .header-btn-wrapper {
+    display: flex;
+
+    .btn-solid,
+    .btn-outline {
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      padding: 1.8rem 4.5rem;
+      border-radius: 1rem;
+      transition: all 0.5s;
+      text-decoration: none;
+      cursor: pointer;
+      z-index: 88;
+
+      @media only screen and (max-width: $bg-tap-port) {
+        font-size: 1.5rem;
+      }
+
+      @media only screen and (max-width: $bg-phone-small) {
+        font-size: 1.4rem;
+        margin-right: 2rem;
+        padding: 1.6rem 3.5rem;
+      }
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+        @media only screen and (max-width: $bg-phone-small) {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    .btn-solid {
+      background-color: $clr-light-orange;
+      color: white;
+
+      &:hover {
+        border: 1px solid $clr-light-orange;
+        background-color: transparent;
+        color: $clr-light-black;
+      }
+    }
+    .btn-outline {
+      border: 1px solid $clr-light-orange;
+      color: $clr-light-black;
+
+      &:hover {
+        background-color: $clr-light-orange;
+        color: white;
+      }
+    }
+  }
+
+  .header-img {
+    width: 100%;
+    max-width: 40rem;
+    z-index: 2;
+    object-fit: contain;
+  }
+
+  .background-svg {
+    width: 100%;
+    position: absolute;
+    bottom: -59%;
+
+    @media only screen and (max-width: $bg-laptop) {
+      bottom: -50%;
+    }
+    @media only screen and (max-width: $bg-tap-port) {
+      bottom: -47%;
+    }
+    @media only screen and (max-width: $bg-phone-big) {
+      bottom: -32%;
+    }
+    @media only screen and (max-width: $bg-phone) {
+      display: none;
+    }
+  }
+}
+.circle-icon {
+  width: 4rem;
+  animation: bounce 3s infinite alternate-reverse;
+
+  @media only screen and (max-width: $bg-tap-port) {
+    margin: -3rem;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

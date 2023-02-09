@@ -1,0 +1,120 @@
+@import "../style/color.module.scss";
+
+footer {
+  background-color: #110a27;
+  color: white;
+  padding: 5rem 0 0 0;
+  overflow: hidden;
+
+  .footer-1-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    margin-bottom: 1rem;
+  }
+
+  .mail {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-family: $Montagu-Slab;
+    color: white;
+
+    @media only screen and (max-width: $bg-phone) {
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: $bg-phone-small) {
+      font-size: 2.4rem;
+    }
+  }
+
+  h4 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: $clr-dull-white;
+  }
+
+  .footer-2-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      margin-top: 2.5rem;
+      flex-direction: column-reverse;
+    }
+
+    .footer-content {
+      color: $clr-dull-white;
+      font-size: 1.4rem;
+      margin: 5rem 0 5rem -5rem;
+
+      @media only screen and (max-width: $bg-tap-port) {
+        font-size: 1.2rem;
+        margin: 5rem 0;
+      }
+      @media only screen and (max-width: $bg-phone-big) {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 5rem 0;
+        width: 40rem;
+      }
+      @media only screen and (max-width: $bg-phone-small) {
+        font-size: 1rem;
+        text-align: center;
+        margin: 5rem 0;
+        width: 35rem;
+      }
+
+      img {
+        width: 1.4rem;
+        margin: 0 0.7rem;
+
+        @media only screen and (max-width: $bg-phone-small) {
+          width: 1.2rem;
+        }
+      }
+
+      span {
+        color: $clr-light-orange;
+        margin-left: 0.7rem;
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+
+      a {
+        color: $clr-dull-white;
+        transition: all 0.4s;
+        margin-left: 3rem;
+
+        &:hover {
+          transform: translateY(-1rem);
+        }
+
+        @media only screen and (max-width: $bg-phone-big) {
+          font-size: 1.2rem;
+
+          &:hover {
+            transform: none;
+          }
+        }
+
+        .icon {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+      .footer-text {
+        color: white;
+
+        @media only screen and (max-width: $bg-phone) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "./style/color.module.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bg-laptop) {
+    font-size: 56%;
+  }
+
+  @media only screen and (max-width: $bg-tap-land) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bg-tap-port) {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-family: $manrope;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  line-height: 1.5;
+  color: $clr-text;
+  background-color: white;
+}

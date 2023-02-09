@@ -1,0 +1,35 @@
+@import "../style/color.module.scss";
+
+.pages-heading {
+  background-color: $bg-color-grey;
+  overflow: hidden;
+  position: relative;
+  max-height: 47rem;
+  div {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+
+    h1 {
+      font-family: $Montagu-Slab;
+      font-size: 4rem;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 1.8rem;
+      text-transform: capitalize;
+      color: $clr-light-orange;
+    }
+  }
+  img {
+    width: 100%;
+    margin-top: 27rem;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      margin-top: 32rem;
+    }
+    @media only screen and (max-width: $bg-phone-small) {
+      margin-top: 36rem;
+    }
+  }
+}

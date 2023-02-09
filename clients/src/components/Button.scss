@@ -1,0 +1,31 @@
+@import "../style/color.module.scss";
+
+.btn {
+  text-decoration: none;
+  background-color: $clr-light-orange;
+  padding: 1.8rem 4rem;
+  border-radius: 1rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: $bg-color-white;
+  transition: transform 0.5s;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  @media only screen and (max-width: $bg-phone-big) {
+    // display: none;
+  }
+
+  @media only screen and (max-width: $bg-phone-small) {
+    padding: 1.4rem 3rem;
+    font-size: 1.5rem;
+  }
+  @media only screen and (max-width: $bg-phone-smallest) {
+    padding: 1.4rem 3rem;
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    transform: translateY(-0.7rem);
+  }
+}

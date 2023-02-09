@@ -1,0 +1,70 @@
+@import "../style/color.module.scss";
+
+.hire {
+  max-height: 40rem;
+  background-color: $bg-color-faint-orange;
+  overflow: hidden;
+  position: relative;
+
+  @media only screen and (max-width: $bg-phone-small) {
+    max-height: 30rem;
+  }
+
+  .hire-heading-container {
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @media only screen and (max-width: $bg-phone) {
+      flex-direction: column;
+    }
+  }
+
+  .hire-heading {
+    font-family: $Montagu-Slab;
+    font-weight: 500;
+    font-size: 3.5rem;
+    color: $clr-light-orange;
+    margin: 3rem 0;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      font-size: 2.7rem;
+
+      text-align: center;
+    }
+    @media only screen and (max-width: $bg-phone-small) {
+      font-size: 2rem;
+      line-height: 1.1;
+    }
+
+    span {
+      display: block;
+
+      @media only screen and (max-width: $bg-phone) {
+        display: inline-block;
+        margin-right: 1rem;
+      }
+
+      @media only screen and (max-width: $bg-phone-small) {
+        font-size: 2rem;
+        line-height: 1.1;
+      }
+    }
+  }
+
+  .hire-svg {
+    width: 100%;
+    margin-top: -6rem;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      margin-top: 2rem;
+      margin-left: -7rem;
+    }
+    @media only screen and (max-width: $bg-phone) {
+      visibility: hidden;
+    }
+  }
+}

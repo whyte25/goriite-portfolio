@@ -1,0 +1,52 @@
+$bg-color-white: #ffffff;
+$bg-color-grey: #9e9da030;
+$bg-color-faint-orange: #fbd8d833;
+$bg-color-greyish-blue: #110a27;
+$bg-color-light-grey: hsl(0, 0%, 96%);
+
+$clr-border: #08001d;
+
+// text
+$clr-text: #0a0026;
+
+$clr-greyish-blue: #0f0039;
+$clr-greyish-light-blue: #0a0026c9;
+$clr-greyish-deep-blue: #0d0030;
+$clr-light-orange-icon: #ec3d3d26;
+$clr-dull-white: #afaabd;
+
+$clr-light-orange: #ec3d3d;
+$clr-light-black: #1c1919;
+
+// fonts
+$manrope: "manrope", san-serif;
+$Montagu-Slab: "Montagu Slab", san-serif;
+
+// MEDIA QUERY
+$bg-laptop: 1260px;
+$bg-tap-land: 1020px;
+$bg-tap-port: 900px;
+$bg-phone-big: 700px;
+$bg-phone: 600px;
+$bg-phone-small: 450px;
+$bg-phone-mobile-s: 375px;
+$bg-phone-smallest: 350px;
+
+////SLIDER//////
+
+/* grey used for paragraphs */
+$clr-grey-5: hsl(210, 22%, 49%);
+$clr-grey-6: hsl(209, 23%, 60%);
+$clr-grey-7: hsl(211, 27%, 70%);
+$clr-grey-8: hsl(210, 31%, 80%);
+$clr-grey-9: hsl(212, 33%, 89%);
+$clr-grey-10: hsl(210, 36%, 96%);
+$clr-white: #fff;
+$clr-black: #222;
+$transition: all 0.3s linear;
+$spacing: 0.2rem;
+$radius: 0.35rem;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+$max-width: 90rem;
+$fixed-width: 55rem;

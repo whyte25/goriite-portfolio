@@ -1,0 +1,19 @@
+@import "../style/color.module.scss";
+
+.to-top {
+  display: none;
+  //   @media only screen and (max-width: $bg-phone-big) {
+  background-color: $clr-light-orange;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 4.5rem;
+  right: 3rem;
+  border-radius: 50%;
+  width: 5.5rem;
+  height: 5.5rem;
+  z-index: 5;
+}
+// }

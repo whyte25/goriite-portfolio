@@ -1,0 +1,73 @@
+@import "../style/color.module.scss";
+
+.about-services {
+  padding: 10rem 10rem;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bg-tap-port) {
+    padding: 10rem 5rem;
+  }
+
+  .about-services-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 8rem;
+    max-width: 100rem;
+    gap: 5rem;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bg-phone-big) {
+      gap: 4rem;
+    }
+
+    @media only screen and (max-width: $bg-phone) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+    @media only screen and (max-width: $bg-phone-small) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 3rem;
+      padding: 0 2rem;
+    }
+  }
+
+  .about-service-container {
+    text-align: center;
+    border: 1px solid $clr-border;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    .icon-container {
+      background-color: $clr-light-orange-icon;
+      width: 10rem;
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin: 3rem auto 2rem auto;
+
+      @media only screen and (max-width: $bg-phone-small) {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+
+    .about-service-icon {
+      @media only screen and (max-width: $bg-laptop) {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+    .about-service-heading {
+      font-family: $Montagu-Slab;
+      font-weight: 500;
+      font-size: 2rem;
+    }
+
+    .about-service-content {
+      text-transform: capitalize;
+      margin: 1rem 0;
+    }
+  }
+}

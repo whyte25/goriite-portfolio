@@ -1,0 +1,57 @@
+@import "../style/color.module.scss";
+
+.contact-form {
+  background-color: $bg-color-faint-orange;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 10rem;
+
+  @media only screen and (max-width: $bg-tap-port) {
+    padding: 10rem 6rem;
+  }
+  @media only screen and (max-width: $bg-phone-big) {
+    padding: 7rem 2rem;
+  }
+
+  @media only screen and (max-width: $bg-phone) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-wrapper {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .heading {
+      font-family: $Montagu-Slab;
+      font-weight: 500;
+      font-size: 3.5rem;
+
+      @media only screen and (max-width: $bg-tap-port) {
+        font-size: 3rem;
+        margin-right: auto;
+      }
+
+      .heading-primary {
+        display: block;
+      }
+      .heading-secondary {
+        display: block;
+      }
+      .heading-tertiary {
+        display: block;
+      }
+    }
+
+    .content {
+      margin: 5rem 0;
+      font-size: 1.6rem;
+
+      @media only screen and (max-width: $bg-tap-port) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

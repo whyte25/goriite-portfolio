@@ -1,0 +1,51 @@
+@import "../style/color.module.scss";
+
+.map {
+  margin: 10rem;
+
+  @media only screen and (max-width: $bg-phone-smallest) {
+    margin: 10rem 5rem;
+  }
+  iframe {
+    width: 100%;
+    margin-inline: auto;
+    height: 45rem;
+
+    @media only screen and (max-width: $bg-phone-smallest) {
+      height: 55rem;
+    }
+  }
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rem 10rem 10rem;
+
+  @media only screen and (max-width: $bg-phone-big) {
+    padding: 0 5rem 10rem 5rem;
+  }
+  @media only screen and (max-width: $bg-phone) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .info-wrapper {
+    @media only screen and (max-width: $bg-phone) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .info-container {
+    display: flex;
+    margin-bottom: 2rem;
+
+    span {
+      margin-left: 2rem;
+
+      a {
+        text-decoration: none;
+        color: currentColor;
+      }
+    }
+  }
+}
